@@ -111,6 +111,29 @@ echo "7C22C4ED" | chpasswd
 echo "UPDATE DAN INSTALL SIAP 99% MOHON SABAR"
 cd;rm *.sh;rm *.txt;rm *.tar;rm *.deb;rm *.asc;rm *.zip;rm ddos*;
 clear
+# script
+wget -O /usr/local/bin/menu "https://raw.githubusercontent.com/ara-rangers/vps/master/menu"
+wget -O /usr/local/bin/m "https://raw.githubusercontent.com/ara-rangers/vps/master/menu"
+wget -O /usr/local/bin/autokill "https://raw.githubusercontent.com/ara-rangers/vps/master/autokill"
+wget -O /usr/local/bin/user-generate "https://raw.githubusercontent.com/ara-rangers/vps/master/user-generate"
+wget -O /usr/local/bin/speedtest "https://raw.githubusercontent.com/ara-rangers/vps/master/speedtest"
+wget -O /usr/local/bin/user-lock "https://raw.githubusercontent.com/ara-rangers/vps/master/user-lock"
+wget -O /usr/local/bin/user-unlock "https://raw.githubusercontent.com/ara-rangers/vps/master/user-unlock"
+wget -O /usr/local/bin/auto-reboot "https://raw.githubusercontent.com/ara-rangers/vps/master/auto-reboot"
+wget -O /usr/local/bin/user-password "https://raw.githubusercontent.com/ara-rangers/vps/master/user-password"
+wget -O /usr/local/bin/trial "https://raw.githubusercontent.com/ara-rangers/vps/master/trial"
+wget -O /etc/pam.d/common-password "https://raw.githubusercontent.com/ara-rangers/vps/master/common-password"
+chmod +x /etc/pam.d/common-password
+chmod +x /usr/local/bin/menu
+chmod +x /usr/local/bin/m
+chmod +x /usr/local/bin/autokill 
+chmod +x /usr/local/bin/user-generate 
+chmod +x /usr/local/bin/speedtest 
+chmod +x /usr/local/bin/user-unlock
+chmod +x /usr/local/bin/user-lock
+chmod +x /usr/local/bin/auto-reboot
+chmod +x /usr/local/bin/user-password
+chmod +x /usr/local/bin/trial
 # restart service
 service ssh restart
 service openvpn restart
