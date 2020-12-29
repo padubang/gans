@@ -79,7 +79,7 @@ echo "/bin/false" >> /etc/shells
 echo "/usr/sbin/nologin" >> /etc/shells
 /etc/init.d/dropbear restart
 # proxy
-https://gakod.com/debian/proxy.sh && bash proxy.sh
+# https://gakod.com/debian/proxy.sh && bash proxy.sh
 # squid
 wget https://raw.githubusercontent.com/kingmapualaut/AAAAAA/main/prx.sh
 chmod +x prx.sh
